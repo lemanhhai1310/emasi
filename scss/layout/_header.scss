@@ -1,0 +1,96 @@
+.header{
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.26);
+  &__top{
+    &:not(.uk-navbar-transparent){
+      background: #282728;
+    }
+    &__navItem{
+      font-family: $font-Open_Sans;
+      min-height: 52px;
+      @include media-breakpoint-up('l'){
+        min-height: 52px;
+      }
+    }
+    .uk-navbar-item,
+    .uk-navbar-toggle{
+      @extend .header__top__navItem;
+    }
+    .uk-navbar-right{
+      gap: 20px;
+    }
+    &__phone{
+      font-weight: 500;
+      @include font-size(20px);
+    }
+    &__btn{
+      text-transform: inherit;
+      font-weight: 500;
+      @include font-size(18px);
+      background-color: #{$primary-color};
+      &:hover{
+        background-color: #{$secondary-color};
+      }
+    }
+    &__lang{
+      >*{
+        color: #8f8d8d;
+        font-weight: 500;
+        @include font-size(20px);
+        &:nth-child(n+2){
+
+        }
+      }
+      span{
+        color: #{$secondary-color};
+      }
+      a{
+        &:hover{
+          color: #{$secondary-color};
+        }
+      }
+    }
+  }
+  &__bottom{
+    &:not(.uk-navbar-transparent){
+      background: #fff;
+    }
+    .uk-logo{
+      img{
+        @include fluidx(69px,52px,height);
+      }
+    }
+    &__navItem{
+      font-family: $font-Open_Sans;
+      min-height: 70px;
+      @include media-breakpoint-up('l'){
+        min-height: 102px;
+      }
+    }
+    .uk-navbar-item,
+    .uk-navbar-toggle{
+      @extend .header__bottom__navItem;
+    }
+    .uk-navbar-dropdown-nav{
+      >li{
+        >a{
+          font-family: $font-Open_Sans;
+          font-weight: 500;
+          text-transform: inherit;
+          @include font-size(20px);
+        }
+      }
+    }
+    .uk-navbar-nav{
+      >li{
+        >a{
+          @extend .header__bottom__navItem;
+          font-family: $font-Open_Sans;
+          font-weight: 500;
+          text-transform: inherit;
+          @include font-size(22px);
+          color: #{$primary-color};
+        }
+      }
+    }
+  }
+}

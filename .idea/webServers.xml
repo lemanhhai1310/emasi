@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="3a30b9ec-5c27-44af-bf0c-49b18b8a1bbc" name="esami" url="http://116.118.50.53">
+        <fileTransfer rootFolder="/themes.cathtmlcss.net/2023/12/emasi" host="116.118.50.53" port="21">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" passiveMode="true" shareSSLContext="true" />
+          </advancedOptions>
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>

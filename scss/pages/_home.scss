@@ -1,0 +1,120 @@
+.home{
+  &__title{
+    line-height: 1;
+    letter-spacing: normal;
+    text-align: left;
+    font-weight: 700;
+    @include font-size(48px);
+  }
+  &__section1{
+    background: #c1d839;
+    padding-top: 40px;
+    @include media-breakpoint-up('l'){
+      padding-top: 0;
+    }
+    .uk-container-expand-right{
+      @include media-breakpoint-up('l'){
+        padding-right: 0;
+        max-width: calc(50% + (1400px / 2) - 0px);
+      }
+    }
+    &__video{
+      margin-left: -15px;
+      margin-right: -15px;
+      @include media-breakpoint-up('m'){
+        margin-left: 0;
+        margin-right: 0;
+        max-width: 100%;
+        width: calc((727 * 100vw)/1920);
+      }
+    }
+    &__title{
+      font-weight: 500;
+      line-height: 1.28;
+      letter-spacing: normal;
+      text-align: justify;
+      color: #fff;
+      @include font-size(36px);
+    }
+    &__desc{
+      line-height: 1.4;
+      letter-spacing: normal;
+      text-align: justify;
+      color: #4e4e4e;
+      @include font-size(30px);
+    }
+  }
+  &__section2{
+    position: relative;
+    &:after{
+      content: "";
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      display: flex;
+      background: #{$secondary-color};
+      @include media-breakpoint-up('m'){
+        max-width: 100%;
+        width: calc((727 * 100vw)/1920);
+      }
+    }
+    &__card{
+      box-shadow: 1.3px 3.8px 16px 0 rgba(0, 0, 0, 0.35);
+      &--primary{
+        background-color: #57cbf5;
+      }
+      &__title{
+        line-height: 1.15;
+        letter-spacing: normal;
+        text-align: left;
+        font-weight: 500;
+        @include font-size(26px);
+        margin-bottom: 10px;
+        @include media-breakpoint-down('xs'){
+          margin-top: 0;
+        }
+      }
+      &__desc{
+        color: #4e4e4e;
+        .home__section2__card--primary &{
+          color: #{$primary-color};
+        }
+        line-height: 1.33;
+        letter-spacing: normal;
+        text-align: left;
+        @include font-size(18px);
+      }
+    }
+    &__card1{
+      min-height: 300px;
+      //background-image: linear-gradient(to top, #000, #fff);
+      background: linear-gradient(to top, #00000096, #ffffff08), url(images/Layer13copy51.png) no-repeat bottom 20px right 20px;
+      &__desc{
+        line-height: 1;
+        letter-spacing: normal;
+        text-align: left;
+        color: #fff;
+        font-weight: 300;
+        @include font-size(24px);
+      }
+    }
+  }
+  &__section3{
+    &__desc{
+      max-width: 100%;
+      width: 930px;
+      @include font-size(24px);
+      line-height: 1.33;
+      letter-spacing: normal;
+      text-align: center;
+      color: #4e4e4e;
+    }
+    &__line{
+      //width: 131px;
+      //height: 26px;
+      @include fluidx(131px,80px,width);
+      @include fluidx(26px,16px,height);
+    }
+  }
+}
