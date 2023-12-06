@@ -198,4 +198,103 @@
     </div>
 </div>
 
+<div class="home__section4 uk-section uk-light uk-background-norepeat uk-background-bottom-center" data-src="images/Layer17.png" uk-img>
+    <div class="uk-container uk-container-large">
+        <h1 class="home__title uk-text-center" style="color: #fff;">Điểm đến Đại học</h1>
+        <div class="item__37-20 uk-flex-center" uk-grid>
+            <div class="uk-width-auto">
+                <div class="home__section3__desc">Với nền tảng năng lực đúc kết qua chương trình IGCSE, Advanced Placement và A Level cùng sự hỗ trợ sâu sát từ Chuyên viên Tư vấn Học đường, học sinh các khoá tốt nghiệp tại EMASI đạt được thành tích học thuật nổi trội, tự tin theo đuổi nguyện vọng và trúng tuyển vào nhiều trường đại học danh giá hành đầu thế giới.</div>
+            </div>
+        </div>
+        <div class="uk-flex-center item__28-15" uk-grid>
+            <div class="uk-width-auto">
+                <div class="home__section3__line uk-background-norepeat uk-background-center-center uk-background-contain" data-src="images/Layer87.png" uk-img></div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="uk-section">
+    <div class="uk-container uk-container-large">
+        <h1 class="home__title" style="color: #005d83;">Chia sẻ của Phụ huynh Học sinh & Giáo viên</h1>
+
+        <div class="uk-slider-container-offset item__67-40" uk-slider>
+
+            <div class="uk-position-relative uk-visible-toggle uk-light" tabindex="-1">
+
+                <ul class="uk-slider-items uk-child-width-1-2@s uk-child-width-1-3@m uk-grid">
+                    <?php for ($i=1;$i<=6;$i++): ?>
+                        <li>
+                            <div class="home__chiase__card uk-card uk-card-default uk-text-center uk-inline-clip uk-transition-toggle uk-display-block">
+                                <div class="uk-cover-container">
+                                    <img src="images/noimage.jpg" alt="" uk-cover="">
+                                    <canvas width="466" height="394"></canvas>
+                                    <div class="home__chiase__card__overlay uk-transition-fade uk-position-cover uk-overlay uk-overlay-primary uk-flex uk-flex-center uk-flex-middle">
+                                        <div>“Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis.”</div>
+                                    </div>
+                                </div>
+                                <div class="uk-card-body">
+                                    <div class="home__chiase__name">Ms. Nguyễn Thị Phụ Huynh</div>
+                                    <div class="home__chiase__txt">Phụ huynh em Lê Văn Học Sinh - Lớp 1E</div>
+                                </div>
+                            </div>
+                        </li>
+                    <?php endfor; ?>
+                </ul>
+
+                <a class="uk-position-center-left uk-position-small uk-hidden-hover" href uk-slidenav-previous uk-slider-item="previous"></a>
+                <a class="uk-position-center-right uk-position-small uk-hidden-hover" href uk-slidenav-next uk-slider-item="next"></a>
+
+            </div>
+
+            <ul class="uk-slider-nav uk-dotnav uk-flex-center uk-margin"></ul>
+
+        </div>
+    </div>
+</div>
+
+<div class="uk-section-large uk-light home__hethong">
+    <div class="uk-position-cover home__hethong__overlay"></div>
+    <div class="uk-container uk-container-large uk-position-relative uk-position-z-index">
+        <h1 class="uk-text-center home__hethong__title">
+            Hệ thống các trường EMASI <br class="uk-visible@s">
+            Tại Việt Nam
+        </h1>
+        <div class="item__110-40 uk-grid-small uk-grid-19-l uk-child-width-1-3@l" uk-grid uk-height-match="target: .home__hethong__box">
+            <div>
+                <div class="uk-card uk-card-body uk-text-center home__hethong__box" style="border-color: #bed530;">
+                    <img src="images/Layer47.png" alt="">
+                    <h4 class="home__hethong__name">EMASI NAM LONG</h4>
+                    <ul class="uk-list home__hethong__list">
+                        <li><span class="uk-margin-small-right" uk-icon="icon: mail"></span>namlong@emasi.edu.vn</li>
+                        <li><span class="uk-margin-small-right" uk-icon="icon: location"></span>No. 147 Street No.8, Nam Long Residential Area, Tan Thuan Dong Ward, District 7, Ho Chi Minh City, Vietnam</li>
+                    </ul>
+                </div>
+            </div>
+            <div>
+                <div class="uk-cover-container home__hethong__box" style="border-color: #bed530;">
+                    <img src="images/photo.jpg" alt="" uk-cover="">
+                    <canvas width="467" height="354"></canvas>
+                </div>
+            </div>
+            <div>
+                <div class="uk-card uk-card-body uk-text-center home__hethong__box" style="border-color: #c423c4;">
+                    <img src="images/Layer56.png" alt="">
+                    <h4 class="home__hethong__name">EMASI PLUS WATERPOINT</h4>
+                    <ul class="uk-list home__hethong__list">
+                        <li><span class="uk-margin-small-right" uk-icon="icon: mail"></span>namlong@emasi.edu.vn</li>
+                        <li><span class="uk-margin-small-right" uk-icon="icon: location"></span>No. 147 Street No.8, Nam Long Residential Area, Tan Thuan Dong Ward, District 7, Ho Chi Minh City, Vietnam</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="uk-section">
+    <div class="uk-container uk-container-large">
+
+    </div>
+</div>
+
 <?php require "template-parts/layouts/footer.php"; ?>

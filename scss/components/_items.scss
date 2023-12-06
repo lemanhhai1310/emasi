@@ -75,4 +75,14 @@
       }
     }
   }
+  $max:110;
+  $min:40;
+  &__#{$max}-#{$min}{
+    &:nth-child(n+2){
+      margin-top: #{$min}px;
+      @include media-breakpoint-up('l'){
+        margin-top: #{$max}px;
+      }
+    }
+  }
 }
