@@ -25,6 +25,42 @@
 <body class="">
 <!--app-->
 <div id="app" class="uk-height-viewport uk-offcanvas-content uk-overflow-hidden uk-position-relative">
+<nav class="floatbutton uk-position-fixed uk-position-center-right uk-position-z-index">
+    <ul class="uk-nav uk-nav-default">
+        <li><a uk-tooltip="Back Top" href="#" uk-totop uk-scroll></a></li>
+        <li><a uk-tooltip="Hotline" href="#"><span>Hotline</span></a></li>
+        <li><a uk-tooltip="Đăng ký tham quan" href="#"><span>Đăng ký tham quan</span></a></li>
+        <li><a uk-tooltip="Hotline" href="#"><span>Hotline</span></a></li>
+    </ul>
+</nav>
+<div id="offcanvas-flip-menu" uk-offcanvas="flip: true; overlay: true">
+    <div class="uk-offcanvas-bar">
+
+        <button class="uk-offcanvas-close" type="button" uk-close></button>
+        <figure><a href=""><img src="images/logo_h.png" alt=""></a></figure>
+        <ul class="uk-nav-default" uk-nav>
+            <li class="uk-active"><a href="#">EMASI</a></li>
+            <li class="uk-parent">
+                <a href="#">Chương trình <span uk-nav-parent-icon></span></a>
+                <ul class="uk-nav-sub">
+                    <li><a href="#">Học sinh</a></li>
+                    <li><a href="#">Cộng đồng</a></li>
+                    <li><a href="#">Tuyển sinh</a></li>
+                    <li><a href="#">Cơ sở</a></li>
+                    <li><a href="#">Academy</a></li>
+                    <li><a href="#">Liên hệ</a></li>
+                </ul>
+            </li>
+            <li><a href="#">Học sinh</a></li>
+            <li><a href="#">Cộng đồng</a></li>
+            <li><a href="#">Tuyển sinh</a></li>
+            <li><a href="#">Cơ sở</a></li>
+            <li><a href="#">Academy</a></li>
+            <li><a href="#">Liên hệ</a></li>
+        </ul>
+
+    </div>
+</div>
 <header class="header" uk-sticky>
     <nav class="header__top uk-navbar-container">
         <div class="uk-container uk-container-large">
@@ -70,7 +106,7 @@
                     <a href="" class="uk-navbar-item uk-logo"><img src="images/logo_h.png" alt=""></a>
                 </div>
                 <div class="uk-navbar-right">
-                    <a class="uk-navbar-toggle uk-hidden@l" href="#">
+                    <a class="uk-navbar-toggle uk-hidden@l" href="#offcanvas-flip-menu" uk-toggle>
                         <span uk-navbar-toggle-icon></span> <span class="uk-margin-small-left">Menu</span>
                     </a>
                     <ul class="uk-navbar-nav uk-visible@l">

@@ -139,7 +139,8 @@
         </div>
         <div class="uk-flex-center item__28-15" uk-grid>
             <div class="uk-width-auto">
-                <div class="home__section3__line uk-background-norepeat uk-background-center-center uk-background-contain" data-src="images/Layer88_line.png" uk-img></div>
+                <div class="home__section3__line uk-background-norepeat uk-background-center-center uk-background-contain uk-position-relative" data-src="images/Layer88_line.png" uk-img>
+                    <a href="" class="uk-position-cover"></a></div>
             </div>
         </div>
         <div class="uk-child-width-1-4@l item__67-40 uk-grid-small uk-grid-26-l" uk-grid>
@@ -208,7 +209,8 @@
         </div>
         <div class="uk-flex-center item__28-15" uk-grid>
             <div class="uk-width-auto">
-                <div class="home__section3__line uk-background-norepeat uk-background-center-center uk-background-contain" data-src="images/Layer87.png" uk-img></div>
+                <div class="home__section3__line uk-background-norepeat uk-background-center-center uk-background-contain uk-position-relative" data-src="images/Layer87.png" uk-img>
+                    <a href="" class="uk-position-cover"></a></div>
             </div>
         </div>
     </div>
@@ -309,7 +311,7 @@
                                         <canvas width="463" height="255"></canvas>
                                     </div>
                                     <div class="uk-card-body home__tintuc__body">
-                                        <h3 class="uk-card-title home__tintuc__name"><a href="">Lorem ipsum dolor sit amet, consecte Lorem ipsum dolor sit amet</a></h3>
+                                        <h3 class="uk-card-title home__tintuc__name"><a href="" class="uk-link-heading">Lorem ipsum dolor sit amet, consecte Lorem ipsum dolor sit amet</a></h3>
                                         <p class="home__tintuc__desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
                                     </div>
                                 </div>
@@ -358,7 +360,7 @@
                             <canvas width="464" height="464"></canvas>
                         </div>
                         <div class="uk-card-body home__tintuc__body">
-                            <h3 class="uk-card-title home__tintuc__name"><a href="">Lorem ipsum dolor sit amet, consecte Lorem ipsum dolor sit amet</a></h3>
+                            <h3 class="uk-card-title home__tintuc__name"><a href="" style="color: #57cbf5;">Lorem ipsum dolor sit amet, consecte Lorem ipsum dolor sit amet</a></h3>
                             <p class="home__tintuc__desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
                         </div>
                     </div>
@@ -407,6 +409,38 @@
                     </div>
                 </div>
             </div>
+        </div>
+    </div>
+</div>
+
+<div class="uk-section-small">
+    <div class="uk-container uk-container-expand">
+        <div uk-slider="autoplay: true">
+
+            <div class="uk-position-relative">
+
+                <div class="uk-slider-container uk-light">
+                    <ul class="uk-slider-items uk-child-width-1-2 uk-child-width-auto@s" uk-grid>
+                        <?php for ($i=1;$i<=10;$i++): ?>
+                        <li>
+                            <img src="images/Layer8.png" alt="">
+                        </li>
+                        <?php endfor; ?>
+                    </ul>
+                </div>
+
+                <div class="uk-hidden@s uk-light">
+                    <a class="uk-position-center-left uk-position-small" href uk-slidenav-previous uk-slider-item="previous"></a>
+                    <a class="uk-position-center-right uk-position-small" href uk-slidenav-next uk-slider-item="next"></a>
+                </div>
+
+                <div class="uk-visible@s">
+                    <a class="uk-position-center-left-out uk-position-small" href uk-slidenav-previous uk-slider-item="previous"></a>
+                    <a class="uk-position-center-right-out uk-position-small" href uk-slidenav-next uk-slider-item="next"></a>
+                </div>
+
+            </div>
+
         </div>
     </div>
 </div>

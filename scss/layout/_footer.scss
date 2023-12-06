@@ -1,0 +1,35 @@
+.footer{
+  &__top{
+    box-sizing: border-box;
+    @include media-breakpoint-down('xs'){
+      background-size: cover;
+    }
+    &__box1{
+      @include font-size(24px);
+      line-height: 1.5;
+      letter-spacing: normal;
+      text-align: justify;
+      //color: #fff;
+    }
+    &__list{
+      >li{
+        @include font-size(24px);
+        font-weight: 500;
+        color: #bcd52a;
+      }
+    }
+  }
+  &__bottom{
+    background-color: #57cbf5;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    &__txt{
+      font-weight: 500;
+      @include font-size(30px);
+      line-height: 0.8;
+      letter-spacing: normal;
+      text-align: center;
+      color: #fffefe;
+    }
+  }
+}
