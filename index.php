@@ -295,7 +295,7 @@
     <div class="uk-container uk-container-large">
         <div class="uk-grid-match" uk-grid>
             <div class="uk-width-expand">
-                <h1 class="home__title" style="color: #4e4e4e;">Tin tức & Sự kiện</h1>
+                <h1 class="home__title home__title--tintuc" style="color: #4e4e4e;">Tin tức & Sự kiện</h1>
                 <div class="uk-slider-container-offset item__28-15" uk-slider>
 
                     <div class="uk-position-relative uk-visible-toggle" tabindex="-1">
@@ -341,6 +341,70 @@
                         </div>
                     </div>
                     <?php endfor; ?>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="home__dky">
+    <div class="uk-container uk-container-large">
+        <div class="uk-grid-match" uk-grid>
+            <div class="uk-width-1-3@l">
+                <div class="uk-section">
+                    <div class="uk-card uk-card-default">
+                        <div class="uk-cover-container">
+                            <img src="images/photo.jpg" alt="" uk-cover="">
+                            <canvas width="464" height="464"></canvas>
+                        </div>
+                        <div class="uk-card-body home__tintuc__body">
+                            <h3 class="uk-card-title home__tintuc__name"><a href="">Lorem ipsum dolor sit amet, consecte Lorem ipsum dolor sit amet</a></h3>
+                            <p class="home__tintuc__desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="uk-width-expand">
+                <div class="uk-section home__dky__boxRight">
+                    <div class="uk-card-body home__dky__boxRight__body uk-position-z-index uk-position-relative">
+                        <h1 class="home__title" style="color: #fff;">Đăng ký Nhận tư vấn</h1>
+                        <div class="home__dky__boxRight__card uk-card uk-card-body uk-card-default">
+                            <form>
+                                <fieldset class="uk-fieldset">
+
+                                    <div class="uk-margin">
+                                        <input class="uk-input home__dky__input" type="text" placeholder="Họ và Tên Phụ huynh " aria-label="Input">
+                                    </div>
+                                    <div class="uk-margin">
+                                        <input class="uk-input home__dky__input" type="text" placeholder="Số điện thoại " aria-label="Input">
+                                    </div>
+                                    <div class="uk-margin">
+                                        <input class="uk-input home__dky__input" type="text" placeholder="Email" aria-label="Input">
+                                    </div>
+
+                                    <div class="uk-margin">
+                                        <select class="uk-select home__dky__select uk-border-pill" aria-label="Select">
+                                            <option>Khối lớp quan tâm</option>
+                                            <option>Option 02</option>
+                                        </select>
+                                    </div>
+                                    <div class="uk-margin">
+                                        <select class="uk-select home__dky__select uk-border-pill" aria-label="Select">
+                                            <option>Cơ sở quan tâm</option>
+                                            <option>Option 02</option>
+                                        </select>
+                                    </div>
+                                    <div class="uk-margin">
+                                        <input class="uk-input home__dky__input" type="text" placeholder="Lời nhắn cho Nhà trường " aria-label="Input">
+                                    </div>
+                                    <div class="uk-margin-large-top">
+                                        <button class="uk-button uk-button-primary uk-border-pill home__dky__btn">ĐĂNG KÝ</button>
+                                    </div>
+
+                                </fieldset>
+                            </form>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>

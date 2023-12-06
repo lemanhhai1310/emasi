@@ -1070,6 +1070,14 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
     font-size: 2.3333333333rem;
   }
 }
+.home__title--tintuc {
+  font-size: calc(1.4166666667rem + 2vw);
+}
+@media (min-width: 1200px) {
+  .home__title--tintuc {
+    font-size: 2.9166666667rem;
+  }
+}
 .home__section1 {
   background: #c1d839;
   padding-top: 40px;
@@ -1424,6 +1432,64 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
 @media (min-width: 1200px) {
   .home__tintuc__box {
     height: calc(100% - 88px);
+  }
+}
+.home__dky {
+  background-color: #ebebeb;
+}
+.home__dky__boxRight {
+  position: relative;
+}
+.home__dky__boxRight:before {
+  content: "";
+  width: 100vw;
+  position: absolute;
+  top: 0;
+  left: -15px;
+  bottom: 0;
+  background-color: #c0d731;
+}
+@media (min-width: 1200px) {
+  .home__dky__boxRight:before {
+    left: 0;
+  }
+}
+.home__dky__boxRight__card {
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.26);
+}
+.home__dky__boxRight__body {
+  padding-top: 0;
+  padding-bottom: 0;
+  padding-right: 0;
+}
+@media (max-width: 639.98px) {
+  .home__dky__boxRight__body {
+    padding-left: 0;
+  }
+}
+.home__dky__input {
+  font-size: 1.1666666667rem;
+  color: #2e2e2e;
+  padding-left: 0;
+  padding-right: 0;
+  border-left: none;
+  border-right: none;
+  border-top: none;
+  border-color: #57cbf5;
+}
+.home__dky__select {
+  font-size: 1.1666666667rem;
+  color: #2e2e2e;
+  border-color: #57cbf5;
+}
+.home__dky__btn {
+  font-weight: 500;
+  font-size: calc(1.2708333333rem + 0.25vw);
+  background: #57cbf5;
+}
+@media (min-width: 1200px) {
+  .home__dky__btn {
+    font-size: 1.4583333333rem;
   }
 }
 
