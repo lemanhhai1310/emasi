@@ -1365,5 +1365,66 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
 .home__hethong__list > li {
   font-size: 1.0694444444rem;
 }
+.home__tintuc__body {
+  padding: 20px;
+}
+.home__tintuc__name {
+  font-size: 1.1666666667rem;
+  font-weight: 500;
+  line-height: 1.25;
+  letter-spacing: normal;
+  text-align: left;
+  color: #010101;
+}
+.home__tintuc__name a {
+  color: #010101;
+}
+.home__tintuc__desc {
+  font-size: 0.875rem;
+  line-height: 1.56;
+  letter-spacing: normal;
+  text-align: left;
+  color: #4e4e4e;
+}
+.home__tintuc__item {
+  border-bottom: 1px solid #fff;
+  padding: 20px 0;
+}
+.home__tintuc__item:first-child {
+  border-top: 1px solid #fff;
+}
+.home__tintuc__item__date1 {
+  font-size: calc(1.4652777778rem + 2.5833333333vw);
+  line-height: 0.8;
+  font-weight: 700;
+  color: #fff;
+}
+@media (min-width: 1200px) {
+  .home__tintuc__item__date1 {
+    font-size: 3.4027777778rem;
+  }
+}
+.home__tintuc__item__date2 {
+  font-size: 0.9479166667rem;
+  line-height: 1;
+}
+.home__tintuc__item__title {
+  font-size: 0.875rem;
+  line-height: 1.33;
+  letter-spacing: normal;
+  text-align: left;
+  color: #fff;
+}
+.home__tintuc__item__title a {
+  color: #fff;
+}
+.home__tintuc__box {
+  background-color: #57cbf5;
+}
+@media (min-width: 1200px) {
+  .home__tintuc__box {
+    height: calc(100% - 88px);
+  }
+}
 
 /*# sourceMappingURL=style.css.map */

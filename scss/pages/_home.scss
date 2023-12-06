@@ -243,4 +243,66 @@
       }
     }
   }
+  &__tintuc{
+    &__body{
+      padding: 20px;
+    }
+    &__name{
+      @include font-size(24px);
+      font-weight: 500;
+      line-height: 1.25;
+      letter-spacing: normal;
+      text-align: left;
+      color: #010101;
+      a{
+        color: #010101;
+      }
+    }
+    &__desc{
+      @include font-size(18px);
+      line-height: 1.56;
+      letter-spacing: normal;
+      text-align: left;
+      color: #4e4e4e;
+    }
+    &__math{
+
+    }
+    &__item{
+      border-bottom: 1px solid #fff;
+      padding: 20px 0;
+      &:first-child{
+        border-top: 1px solid #fff;
+      }
+      &:nth-child(n+2){
+
+      }
+      &__date1{
+        @include font-size(70px);
+        line-height: .8;
+        font-weight: 700;
+        color: #fff;
+      }
+      &__date2{
+        @include font-size(19.5px);
+        line-height: 1;
+      }
+      &__title{
+        @include font-size(18px);
+        line-height: 1.33;
+        letter-spacing: normal;
+        text-align: left;
+        color: #fff;
+        a{
+          color: #fff;
+        }
+      }
+    }
+    &__box{
+      background-color: #57cbf5;
+      @include media-breakpoint-up('l'){
+        height: calc(100% - 88px);
+      }
+    }
+  }
 }

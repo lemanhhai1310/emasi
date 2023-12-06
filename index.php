@@ -293,7 +293,57 @@
 
 <div class="uk-section">
     <div class="uk-container uk-container-large">
+        <div class="uk-grid-match" uk-grid>
+            <div class="uk-width-expand">
+                <h1 class="home__title" style="color: #4e4e4e;">Tin tức & Sự kiện</h1>
+                <div class="uk-slider-container-offset item__28-15" uk-slider>
 
+                    <div class="uk-position-relative uk-visible-toggle" tabindex="-1">
+
+                        <ul class="uk-slider-items uk-child-width-1-2@s uk-grid">
+                            <?php for ($i=1;$i<=6;$i++): ?>
+                            <li>
+                                <div class="uk-card uk-card-default">
+                                    <div class="uk-cover-container">
+                                        <img src="images/photo.jpg" alt="" uk-cover="">
+                                        <canvas width="463" height="255"></canvas>
+                                    </div>
+                                    <div class="uk-card-body home__tintuc__body">
+                                        <h3 class="uk-card-title home__tintuc__name"><a href="">Lorem ipsum dolor sit amet, consecte Lorem ipsum dolor sit amet</a></h3>
+                                        <p class="home__tintuc__desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+                                    </div>
+                                </div>
+                            </li>
+                            <?php endfor; ?>
+                        </ul>
+
+                        <a class="uk-position-center-left uk-position-small uk-hidden-hover" href uk-slidenav-previous uk-slider-item="previous"></a>
+                        <a class="uk-position-center-right uk-position-small uk-hidden-hover" href uk-slidenav-next uk-slider-item="next"></a>
+
+                    </div>
+
+                    <ul class="uk-slider-nav uk-dotnav uk-flex-center uk-margin"></ul>
+
+                </div>
+            </div>
+            <div class="uk-width-1-3@l">
+                <div class="uk-card uk-card-body uk-card-primary home__tintuc__box">
+                    <?php for ($i=1;$i<=4;$i++): ?>
+                    <div class="home__tintuc__item">
+                        <div class="uk-flex-middle uk-grid-medium" uk-grid>
+                            <div class="uk-width-auto">
+                                <div class="home__tintuc__item__date1">22</div>
+                                <div class="home__tintuc__item__date2">Sep 2023</div>
+                            </div>
+                            <div class="uk-width-expand">
+                                <h5 class="home__tintuc__item__title"><a href="" class="uk-link-toggle">Lorem ipsum dolor sit amet, consectetur. Lorem ipsum dolor sit amet, consectetur dolor sit</a></h5>
+                            </div>
+                        </div>
+                    </div>
+                    <?php endfor; ?>
+                </div>
+            </div>
+        </div>
     </div>
 </div>
 
