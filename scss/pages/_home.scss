@@ -116,5 +116,61 @@
       @include fluidx(131px,80px,width);
       @include fluidx(26px,16px,height);
     }
+    &__card{
+      display: block;
+      border-radius: 10px;
+      box-shadow: 4.8px 7.6px 6px 0 rgba(0, 0, 0, 0.08);
+      &__coverimg{
+        border-radius: 10px 10px 0 0;
+      }
+      &__title{
+        margin: 0;
+        min-height: 63px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-weight: 500;
+        line-height: 1.7;
+        letter-spacing: normal;
+        text-align: center;
+        color: #fff;
+        background-color: var(--color);
+      }
+      &__body{
+        padding: 20px;
+      }
+      &__overlay{
+        background-color: var(--color);
+      }
+      &__title1{
+        line-height: 1.7;
+        letter-spacing: normal;
+        text-align: center;
+        color: #fff;
+        font-weight: 500;
+        @include font-size(30px);
+      }
+      &__content1{
+        line-height: 1.2;
+        letter-spacing: normal;
+        text-align: justify;
+        color: #fff;
+        @include font-size(20px);
+      }
+      &__link{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        min-height: 67px;
+        mix-blend-mode: multiply;
+        background-color: var(--color);
+        line-height: 1.7;
+        letter-spacing: normal;
+        text-align: center;
+        color: #fff !important;
+        @include font-size(30px);
+        font-weight: 300;
+      }
+    }
   }
 }

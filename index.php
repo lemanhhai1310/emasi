@@ -142,33 +142,56 @@
                 <div class="home__section3__line uk-background-norepeat uk-background-center-center uk-background-contain" data-src="images/Layer88_line.png" uk-img></div>
             </div>
         </div>
-        <div class="uk-child-width-1-4@l item__67-40" uk-grid>
+        <div class="uk-child-width-1-4@l item__67-40 uk-grid-small uk-grid-26-l" uk-grid>
             <?php
             $data = array(
                 array(
                     'img' => 'images/HD_R1230.png',
                     'title' => 'Chương trình Mẫu Giáo',
-                    'desc' => '',
+                    'color' => '#ffd200',
                 ),
                 array(
-                    'img' => '',
+                    'img' => 'images/photo.jpg',
                     'title' => 'Chương trình Tiểu học',
-                    'desc' => '',
+                    'color' => '#c1d839',
                 ),
                 array(
-                    'img' => '',
+                    'img' => 'images/HD_R1013.png',
                     'title' => 'Chương trình THCS',
-                    'desc' => '',
+                    'color' => '#57cbf5',
                 ),
                 array(
-                    'img' => '',
+                    'img' => 'images/HD_R2232.png',
                     'title' => 'Chương trình THPT',
-                    'desc' => '',
+                    'color' => '#005d83',
                 ),
             );
             foreach ($data as $k=>$v): ?>
             <div>
+                <div class="uk-card uk-card-default home__section3__card uk-inline-clip uk-transition-toggle" style="--color: <?= $v['color'] ?>">
+                    <div class="uk-cover-container home__section3__card__coverimg">
+                        <img src="<?= $v['img'] ?>" alt="" uk-cover="">
+                        <canvas width="341" height="246"></canvas>
+                    </div>
+                    <h4 class="uk-text-center home__section3__card__title"><?= $v['title'] ?></h4>
+                    <div class="uk-card-body uk-text-center home__section3__card__body">
+                        <img src="images/Layer8.png" alt="">
+                    </div>
+                    <div class="home__section3__card__overlay uk-light uk-flex uk-flex-column uk-transition-slide-bottom uk-position-cover">
+                        <div class="uk-flex-auto uk-overlay">
+                            <h4 class="home__section3__card__title1"><?= $v['title'] ?></h4>
+                            <div class="home__section3__card__content1">
+                                Chương trình Bộ GD&ĐT Việt Nam
+                                Chương trình Tiểu học Quốc tế Cambridge:  Toàn cầu, Tiếng Anh, Toán học, Quan điểm, Công nghệ Thông tin (ICT), Âm nhạc, Hội hoạ, Giáo dục Thể chất,...
 
+                                Chương trình Thư viện
+
+                                Chứng chỉ tiếng Anh Cambridge Flyers
+                            </div>
+                        </div>
+                        <a href="" class="home__section3__card__link uk-link-toggle">Tìm hiểu thêm >>></a>
+                    </div>
+                </div>
             </div>
             <?php endforeach; ?>
         </div>
