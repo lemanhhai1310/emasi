@@ -25,13 +25,65 @@
 <body class="">
 <!--app-->
 <div id="app" class="uk-height-viewport uk-offcanvas-content uk-overflow-hidden uk-position-relative">
-<nav class="floatbutton uk-position-fixed uk-position-center-right uk-position-z-index">
+<nav class="floatbutton uk-position-fixed uk-position-center-right">
     <ul class="uk-nav uk-nav-default">
         <li><a uk-tooltip="Back Top" href="#" uk-totop uk-scroll></a></li>
         <li><a uk-tooltip="Hotline" href="#"><span>Hotline</span></a></li>
         <li><a uk-tooltip="Đăng ký tham quan" href="#"><span>Đăng ký tham quan</span></a></li>
         <li><a uk-tooltip="Hotline" href="#"><span>Hotline</span></a></li>
     </ul>
+</nav>
+<nav class="kanns-navbar uk-hidden@l uk-navbar-container uk-position-fixed uk-position-bottom uk-navbar" uk-navbar="">
+    <div class="uk-navbar-left uk-flex-1">
+
+        <ul class="uk-navbar-nav uk-flex-1 uk-child-width-expand uk-grid-match">
+            <li class="uk-active">
+                <a href="onboarding.php">
+                    <div class="uk-flex uk-flex-column uk-flex-middle">
+                        <span class="kanns-navbar__iconNav kanns-navbar__iconNav--trangchu"></span>
+                        <div class="uk-navbar-subtitle kanns-navbar__subtitle item__2">Trang chủ</div>
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a href="danhsachmau.php">
+                    <div class="uk-flex uk-flex-column uk-flex-middle">
+                        <span class="kanns-navbar__iconNav kanns-navbar__iconNav--thamquan"></span>
+                        <div class="uk-navbar-subtitle kanns-navbar__subtitle item__2">Tham quan trường</div>
+                    </div>
+                </a>
+            </li>
+
+            <li>
+                <a href="danhsachmau.php">
+                    <div class="uk-flex uk-flex-column uk-flex-middle">
+                        <span class="kanns-navbar__iconNav kanns-navbar__iconNav--hotline"></span>
+                        <div class="uk-navbar-subtitle kanns-navbar__subtitle item__2">Hotline</div>
+                    </div>
+                </a>
+            </li>
+
+            <li class="">
+                <a href="thongbao.php">
+                    <div class="uk-flex uk-flex-column uk-flex-middle">
+                    <span class="kanns-navbar__iconNav kanns-navbar__iconNav--tuvan">
+
+                    </span>
+                        <div class="uk-navbar-subtitle kanns-navbar__subtitle item__2">Tư vấn</div>
+                    </div>
+                </a>
+            </li>
+            <li class="">
+                <a href="#offcanvas-flip-menu" uk-toggle>
+                    <div class="uk-flex uk-flex-column uk-flex-middle">
+                        <span class="kanns-navbar__iconNav kanns-navbar__iconNav--menu"></span>
+                        <div class="uk-navbar-subtitle kanns-navbar__subtitle item__2">Menu</div>
+                    </div>
+                </a>
+            </li>
+        </ul>
+
+    </div>
 </nav>
 <div id="offcanvas-flip-menu" uk-offcanvas="flip: true; overlay: true">
     <div class="uk-offcanvas-bar">

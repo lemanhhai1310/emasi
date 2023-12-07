@@ -143,7 +143,79 @@
                     <a href="" class="uk-position-cover"></a></div>
             </div>
         </div>
-        <div class="uk-child-width-1-4@l item__67-40 uk-grid-small uk-grid-26-l" uk-grid>
+        <div style="margin-left: -15px;margin-right: -15px;" class="uk-slider-container-offset uk-position-relative uk-hidden@l item__67-40 uk-visible-toggle" tabindex="-1" uk-slider="clsActivated: uk-transition-active; center: true;">
+            <ul class="uk-slider-nav home__section3__dotnav uk-grid-2 uk-grid-match uk-child-width-expand uk-dotnav uk-flex-center uk-margin" role="tablist">
+                <li uk-slider-item="0" role="presentation" class="uk-active"><a href="" role="tab"
+                                                                                aria-controls="uk-slider-51-item-0"
+                                                                                aria-label="Slide 1" aria-selected="true">Chương trình
+                        Mẫu Giáo</a></li>
+                <li uk-slider-item="1" role="presentation" class=""><a href="" role="tab" aria-controls="uk-slider-51-item-1"
+                                                                       aria-label="Slide 2" aria-selected="false" tabindex="-1">Chương trình
+                        Tiểu học</a>
+                </li>
+                <li uk-slider-item="2" role="presentation" class=""><a href="" role="tab" aria-controls="uk-slider-51-item-2"
+                                                                       aria-label="Slide 3" aria-selected="false" tabindex="-1">Chương trình
+                        THCS</a>
+                </li>
+                <li uk-slider-item="3" role="presentation" class=""><a href="" role="tab" aria-controls="uk-slider-51-item-3"
+                                                                       aria-label="Slide 4" aria-selected="false" tabindex="-1">Chương trình
+                        THPT</a>
+                </li>
+            </ul>
+            <ul class="uk-slider-items uk-grid">
+                <?php
+                $data = array(
+                    array(
+                        'img' => 'images/HD_R1230.png',
+                        'title' => 'Chương trình Mẫu Giáo',
+                        'color' => '#ffd200',
+                    ),
+                    array(
+                        'img' => 'images/photo.jpg',
+                        'title' => 'Chương trình Tiểu học',
+                        'color' => '#c1d839',
+                    ),
+                    array(
+                        'img' => 'images/HD_R1013.png',
+                        'title' => 'Chương trình THCS',
+                        'color' => '#57cbf5',
+                    ),
+                    array(
+                        'img' => 'images/HD_R2232.png',
+                        'title' => 'Chương trình THPT',
+                        'color' => '#005d83',
+                    ),
+                );
+                foreach ($data as $k=>$v): ?>
+                <li class="uk-width-3-4 uk-width-1-4@m">
+                    <div class="uk-card uk-card-default home__section3__card uk-inline-clip uk-transition-toggle" style="--color: <?= $v['color'] ?>">
+                        <div class="uk-cover-container home__section3__card__coverimg">
+                            <img src="<?= $v['img'] ?>" alt="" uk-cover="">
+                            <canvas width="341" height="246"></canvas>
+                        </div>
+                        <h4 class="uk-text-center home__section3__card__title"><?= $v['title'] ?></h4>
+                        <div class="uk-card-body uk-text-center home__section3__card__body">
+                            <img src="images/Layer8.png" alt="">
+                        </div>
+                        <div class="home__section3__card__overlay uk-light uk-flex uk-flex-column uk-transition-slide-bottom uk-position-cover">
+                            <div class="uk-flex-auto uk-overlay">
+                                <h4 class="home__section3__card__title1"><?= $v['title'] ?></h4>
+                                <div class="home__section3__card__content1">
+                                    Chương trình Bộ GD&ĐT Việt Nam
+                                </div>
+                            </div>
+                            <a href="" class="home__section3__card__link uk-link-toggle">Tìm hiểu thêm >>></a>
+                        </div>
+                    </div>
+                </li>
+                <?php endforeach; ?>
+            </ul>
+
+            <a class="uk-position-center-left uk-position-small uk-hidden-hover" href uk-slidenav-previous uk-slider-item="previous"></a>
+            <a class="uk-position-center-right uk-position-small uk-hidden-hover" href uk-slidenav-next uk-slider-item="next"></a>
+
+        </div>
+        <div class="uk-visible@l uk-child-width-1-4@l item__67-40 uk-grid-small uk-grid-26-l" uk-grid>
             <?php
             $data = array(
                 array(
@@ -220,13 +292,13 @@
     <div class="uk-container uk-container-large">
         <h1 class="home__title" style="color: #005d83;">Chia sẻ của Phụ huynh Học sinh & Giáo viên</h1>
 
-        <div class="uk-slider-container-offset item__67-40" uk-slider>
+        <div class="uk-slider-container-offset item__67-40 slider_phuhuynh" uk-slider>
 
             <div class="uk-position-relative uk-visible-toggle uk-light" tabindex="-1">
 
-                <ul class="uk-slider-items uk-child-width-1-2@s uk-child-width-1-3@m uk-grid">
+                <ul class="uk-slider-items uk-grid">
                     <?php for ($i=1;$i<=6;$i++): ?>
-                        <li>
+                        <li class="uk-width-3-4 uk-width-1-2@s uk-width-1-3@m">
                             <div class="home__chiase__card uk-card uk-card-default uk-text-center uk-inline-clip uk-transition-toggle uk-display-block">
                                 <div class="uk-cover-container">
                                     <img src="images/noimage.jpg" alt="" uk-cover="">
@@ -252,6 +324,14 @@
             <ul class="uk-slider-nav uk-dotnav uk-flex-center uk-margin"></ul>
 
         </div>
+        <script>
+            let element = document.querySelector('.slider_phuhuynh');
+            if (element){
+                UIkit.slider(element, {
+                    center: true,
+                });
+            }
+        </script>
     </div>
 </div>
 
@@ -330,19 +410,45 @@
             </div>
             <div class="uk-width-1-3@l">
                 <div class="uk-card uk-card-body uk-card-primary home__tintuc__box">
-                    <?php for ($i=1;$i<=4;$i++): ?>
-                    <div class="home__tintuc__item">
-                        <div class="uk-flex-middle uk-grid-medium" uk-grid>
-                            <div class="uk-width-auto">
-                                <div class="home__tintuc__item__date1">22</div>
-                                <div class="home__tintuc__item__date2">Sep 2023</div>
+                    <div class="uk-visible@l">
+                        <?php for ($i=1;$i<=4;$i++): ?>
+                            <div class="home__tintuc__item">
+                                <div class="uk-flex-middle uk-grid-medium" uk-grid>
+                                    <div class="uk-width-auto">
+                                        <div class="home__tintuc__item__date1">22</div>
+                                        <div class="home__tintuc__item__date2">Sep 2023</div>
+                                    </div>
+                                    <div class="uk-width-expand">
+                                        <h5 class="home__tintuc__item__title"><a href="" class="uk-link-toggle">Lorem ipsum dolor sit amet, consectetur. Lorem ipsum dolor sit amet, consectetur dolor sit</a></h5>
+                                    </div>
+                                </div>
                             </div>
-                            <div class="uk-width-expand">
-                                <h5 class="home__tintuc__item__title"><a href="" class="uk-link-toggle">Lorem ipsum dolor sit amet, consectetur. Lorem ipsum dolor sit amet, consectetur dolor sit</a></h5>
-                            </div>
-                        </div>
+                        <?php endfor; ?>
                     </div>
-                    <?php endfor; ?>
+                    <div class="uk-hidden@l uk-position-relative uk-visible-toggle uk-light" tabindex="-1" uk-slider="clsActivated: uk-transition-active; center: true">
+
+                        <ul class="uk-slider-items uk-grid">
+                            <?php for ($i=1;$i<=4;$i++): ?>
+                            <li class="uk-width-3-4">
+                                <div class="home__tintuc__item">
+                                    <div class="uk-flex-middle uk-grid-medium" uk-grid>
+                                        <div class="uk-width-auto">
+                                            <div class="home__tintuc__item__date1">22</div>
+                                            <div class="home__tintuc__item__date2">Sep 2023</div>
+                                        </div>
+                                        <div class="uk-width-expand">
+                                            <h5 class="home__tintuc__item__title"><a href="" class="uk-link-toggle">Lorem ipsum dolor sit amet, consectetur. Lorem ipsum dolor sit amet, consectetur dolor sit</a></h5>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <?php endfor; ?>
+                        </ul>
+
+                        <a class="uk-position-center-left uk-position-small uk-hidden-hover" href uk-slidenav-previous uk-slider-item="previous"></a>
+                        <a class="uk-position-center-right uk-position-small uk-hidden-hover" href uk-slidenav-next uk-slider-item="next"></a>
+
+                    </div>
                 </div>
             </div>
         </div>

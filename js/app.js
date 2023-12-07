@@ -13,7 +13,13 @@ const xx = document.querySelectorAll.bind(document);
 
 const app = {
     render: function () {
-        
+        const kanns_navbar = x('.kanns-navbar');
+        const app = x('#app');
+        if (kanns_navbar){
+            const kanns_navbarHeight = kanns_navbar ? kanns_navbar.offsetHeight + 'px' : 0;
+            app.style.paddingBottom = kanns_navbarHeight;
+            console.log('paddingBottom App',kanns_navbarHeight);
+        }
     },
     start: function () {
         this.render();

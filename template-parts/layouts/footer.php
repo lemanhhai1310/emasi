@@ -1,7 +1,7 @@
 <footer class="footer uk-light">
     <div class="uk-section footer__top uk-background-norepeat uk-background-bottom-center" data-src="images/bgfooter-02.png" uk-img>
         <div class="uk-container uk-container-large">
-            <div class="uk-child-width-1-3@l" uk-grid>
+            <div class="uk-child-width-1-3@l uk-visible@l" uk-grid>
                 <div>
                     <figure><a href=""><img src="images/Layer89.png" alt=""></a></figure>
                     <div>
@@ -24,6 +24,41 @@
                 </div>
                 <div>
                     <figure><a href=""><img src="images/Layer76.png" alt=""></a></figure>
+                </div>
+            </div>
+            <div class="uk-hidden@l">
+                <div class="uk-child-width-1-2 uk-flex-middle" uk-grid>
+                    <div>
+                        <figure><a href=""><img src="images/Layer89.png" alt=""></a></figure>
+                    </div>
+                    <div>
+                        <div class="footer__top__box1">
+                            <div>Hệ thống Trường EMASI</div>
+                            <div>+ EMASI Nam Long</div>
+                            <div>+ EMASI Vạn Phúc</div>
+                            <div>+ EMASI Plus Waterpoint</div>
+                        </div>
+                    </div>
+                    <div class="uk-width-1-1">
+                        <div class="uk-flex-center" uk-grid>
+                            <div class="uk-width-3-4">
+                                <figure><a href=""><img src="images/Layer76.png" alt=""></a></figure>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="uk-width-1-1">
+                        <ul class="uk-list footer__top__list">
+                            <li><span class="uk-margin-small-right" uk-icon="icon: receiver"></span>1800 599 918</li>
+                            <li><span class="uk-margin-small-right" uk-icon="icon: mail"></span>tuyensinh@emasi.edu.vn</li>
+                        </ul>
+                    </div>
+                    <div class="uk-width-1-1">
+                        <div class="uk-flex uk-flex-center">
+                            <a href="" class="uk-icon-button uk-margin-small-right" uk-icon="twitter"></a>
+                            <a href="" class="uk-icon-button  uk-margin-small-right" uk-icon="facebook"></a>
+                            <a href="" class="uk-icon-button" uk-icon="youtube"></a>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
